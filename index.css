@@ -1,3 +1,10 @@
+body{
+	background-image: url("imagen.jpg");
+	background-repeat: no-repeat;
+	/*background-repeat: repeat-x;*/
+	background-color:  #c8b04e;
+}
+
 h1,p{
 	color:blue;
 	text-align: center;
