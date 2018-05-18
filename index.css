@@ -1,17 +1,20 @@
 body{
 	background-image: url("imagen.jpg");
 	background-repeat: no-repeat;
-	/*background-repeat: repeat-x;*/
-	/*background-position: center top;*/
+	/*background-repeat: repeat-x; Se repita la imagen en el eje x*/ 
+	/*background-position: center top; En el centro arriba*/
 	background-position: 50% 50%;
 	background-attachment: fixed; /*Esto se usa para que no se mueva la imagen de fondo*/
 	background-size: 100% 100%;
-	/*background.size: 100px 100px; */
+	/*background.size: 100px 100px;*/
 	/*background-size: cover; Ajusta la imagen al tamaño del navegador o pantalla*/
 	/*background-size: contain; Ajusta la imagen y le cambia el tamaño según el navegador*/
-	background: linear-gradient(red,yellow); /*Hace de color rojo al amarillo y en el cambio pone colores parecidos*/
-	/*background: linear-gradient(to right, red,yellow);*/
-	background: linear-gradient(to right, red,white,green);*/
+
+	background: linear-gradient(red,yellow); /*Degradado de colores*/
+	/*background: linear-gradient(to right ó 60deg, red,yellow,green);*/
+	/*background: linear-gradient(-80deg,rgba(34, 124, 118 , 0),rgba( 34, 124, 118 ,1));*/
+	/*background: repeating-linear-gradient(80deg, red 10%,yellow,blue 20%);*/
+	background: repeating-radial-gradient(circle,red 10%,yellow 15%,green 20%);
 }
 .space{
 	height: 200px;
