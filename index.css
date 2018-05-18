@@ -6,7 +6,25 @@ h1,p{
 	background-color: green;
 	height: 20px;
 }
+h2.parrafo{
+	color:white;
+	height: 40px;
+}
 span h2{
 	color: red;
 	font-size: 30px;
+}
+#colores{
+	background-color: blue;
+	color: white;
+	font-size: 2em;
+}
+#orange{
+	color:orange;
+}
+#green{
+	color: green;
+}
+#red{
+	color: red;
 }
