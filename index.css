@@ -9,9 +9,12 @@ body{
 	/*background.size: 100px 100px; */
 	/*background-size: cover; Ajusta la imagen al tamaño del navegador o pantalla*/
 	/*background-size: contain; Ajusta la imagen y le cambia el tamaño según el navegador*/
+	background: linear-gradient(red,yellow); /*Hace de color rojo al amarillo y en el cambio pone colores parecidos*/
+	/*background: linear-gradient(to right, red,yellow);*/
+	background: linear-gradient(to right, red,white,green);*/
 }
 .space{
-	height: 500px;
+	height: 200px;
 }
 
 h1,p{
