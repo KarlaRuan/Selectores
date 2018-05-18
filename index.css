@@ -10,26 +10,28 @@ body{
 	/*background-size: cover; Ajusta la imagen al tamaño del navegador o pantalla*/
 	/*background-size: contain; Ajusta la imagen y le cambia el tamaño según el navegador*/
 
-	background: linear-gradient(red,yellow); /*Degradado de colores*/
+	background: linear-gradient( #fcc85e ,  #f7e2b8 ); /*Degradado de colores*/
 	/*background: linear-gradient(to right ó 60deg, red,yellow,green);*/
 	/*background: linear-gradient(-80deg,rgba(34, 124, 118 , 0),rgba( 34, 124, 118 ,1));*/
 	/*background: repeating-linear-gradient(80deg, red 10%,yellow,blue 20%);*/
-	background: repeating-radial-gradient(circle,red 10%,yellow 15%,green 20%);
+	/*background: repeating-radial-gradient(yellow 5%,cyan 10%,darkblue 15%);*/
 }
 .space{
 	height: 200px;
 }
 
 h1,p{
-	color:blue;
+	color: hsl( 37, 81%, 27% );  /*Colores en hsl  0->rojo, 120->verde, 240->azul 
+					saturacion: 0% tono gris y 100% el color
+					y luminosidad: 0% negro y 100% blanco*/
 	text-align: center;
 }
 h2.parrafo{
-	color:white;
+	color:hsla( 37, 81%, 27%, 1 );;
 	height: 40px;
 }
 span h2{
-	color: red;
+	color: hsl( 37, 81%, 27%, .8 );
 	font-size: 30px;
 }
 a[href]{
@@ -42,11 +44,11 @@ a[class="parrafo"]{
 	color: black;
 }
 .parrafo{
-	background-color: green;
+	background-color: #f0a730 ;
 	height: 20px;
 }
 #colores > ul >li{
-	background-color: blue;
+	background-color: rgba( 98, 208, 201 , .5);
 	color: white;
 	font-size: 2em;
 }
