@@ -2,16 +2,21 @@ body{
 	background-image: url("imagen.jpg");
 	background-repeat: no-repeat;
 	/*background-repeat: repeat-x;*/
-	background-color:  #c8b04e;
+	/*background-position: center top;*/
+	background-position: 50% 50%;
+	background-attachment: fixed; /*Esto se usa para que no se mueva la imagen de fondo*/
+	background-size: 100% 100%;
+	/*background.size: 100px 100px; */
+	/*background-size: cover; Ajusta la imagen al tamaño del navegador o pantalla*/
+	/*background-size: contain; Ajusta la imagen y le cambia el tamaño según el navegador*/
+}
+.space{
+	height: 500px;
 }
 
 h1,p{
 	color:blue;
 	text-align: center;
-}
-.parrafo{
-	background-color: green;
-	height: 20px;
 }
 h2.parrafo{
 	color:white;
@@ -20,6 +25,19 @@ h2.parrafo{
 span h2{
 	color: red;
 	font-size: 30px;
+}
+a[href]{
+	color: red;
+}
+a[href="ejemplo.com"]{
+	color: blue;
+}
+a[class="parrafo"]{
+	color: black;
+}
+.parrafo{
+	background-color: green;
+	height: 20px;
 }
 #colores > ul >li{
 	background-color: blue;
@@ -34,13 +52,4 @@ span h2{
 }
 #red{
 	color: red;
-}
-a[href]{
-	color: red;
-}
-a[href="ejemplo.com"]{
-	color: blue;
-}
-a[class="parrafo"]{
-	color: black;
 }
