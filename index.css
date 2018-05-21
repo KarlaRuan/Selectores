@@ -25,14 +25,26 @@ h1,p{
 					saturacion: 0% tono gris y 100% el color
 					y luminosidad: 0% negro y 100% blanco*/
 	text-align: center;
+	border-top-style: dotted;
+	border-left-style: dashed;
+	border-left-color: blue;
+	border-bottom: solid #008080 2px;
 }
 h2.parrafo{
-	color:hsla( 37, 81%, 27%, 1 );;
+	color:hsla( 37, 81%, 27%, 1 );
 	height: 40px;
+	/*border: solid/dotted/dashed #8B4513 10px;*/
+	border: double #8B4513 8px;
 }
-span h2{
+h3{
+	color:hsla( 37, 81%, 27%, 1 );
+	text-align: center;
+	border: solid #eee 10px;
+	border-radius: 100%;
+}
+span h2,p{
 	color: hsl( 37, 81%, 27%, .8 );
-	font-size: 30px;
+	font-size: 25px;
 }
 a[href]{
 	color: red;
