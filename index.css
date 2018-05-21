@@ -28,6 +28,8 @@ h1{
 	border-top-style: dotted;
 	border-left-style: dashed;
 	border-left-color: blue;
+	border-right-style: dashed;
+	border-right-color: green;
 	border-bottom: solid #008080 2px;
 	font-size: 50px;
 	font-family: 'Pacifico', cursive;
@@ -78,6 +80,19 @@ a[class="parrafo"]{
 	background-color: #f0a730 ;
 	height: 20px;
 	text-align: right;
+}
+.container{
+	position: relative;
+	border: 2px solid red;
+	height: 400px;
+}
+.imagen{
+	position: absolute;
+	/*top: 30px;
+	left: 20px; */
+}
+.titulo{
+	position: absolute;
 }
 #colores > ul {
 	background-color: rgba( 98, 208, 201 , .5);
