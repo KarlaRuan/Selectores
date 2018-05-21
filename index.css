@@ -15,6 +15,7 @@ body{
 	/*background: linear-gradient(-80deg,rgba(34, 124, 118 , 0),rgba( 34, 124, 118 ,1));*/
 	/*background: repeating-linear-gradient(80deg, red 10%,yellow,blue 20%);*/
 	/*background: repeating-radial-gradient(yellow 5%,cyan 10%,darkblue 15%);*/
+	margin: 0;
 }
 .space{
 	height: 200px;
@@ -56,6 +57,7 @@ h3{
 	text-align: center;
 	border: solid #eee 10px;
 	border-radius: 100%;
+	margin: 5px;
 }
 span h2{
 	color: hsl( 37, 81%, 27%, .8 );
@@ -85,14 +87,17 @@ a[class="parrafo"]{
 	position: relative;
 	border: 2px solid red;
 	height: 400px;
+	/*padding: 10px 5px 10px 5px;*/
+	/*padding: 10px; Cada lado será de 10px*/
 }
 .imagen{
 	position: absolute;
+	margin: 10px;
 	/*top: 30px;
 	left: 20px; */
 }
 .titulo{
-	position: absolute;
+	margin: auto;
 }
 #colores > ul {
 	background-color: rgba( 98, 208, 201 , .5);
