@@ -20,7 +20,7 @@ body{
 	height: 200px;
 }
 
-h1,p{
+h1{
 	color: hsl( 37, 81%, 27% );  /*Colores en hsl  0->rojo, 120->verde, 240->azul 
 					saturacion: 0% tono gris y 100% el color
 					y luminosidad: 0% negro y 100% blanco*/
@@ -29,6 +29,19 @@ h1,p{
 	border-left-style: dashed;
 	border-left-color: blue;
 	border-bottom: solid #008080 2px;
+	font-size: 50px;
+	font-family: 'Pacifico', cursive;
+	text-shadow: 10px 5px 5px #e59866;
+}
+span p{
+	font-size: 2em;
+	/*white-space: normal /nowrap Lo escribe en una sola linea */
+	/*white-space: pre; /*HAce los saltos de linea que estén en el parrafo*/
+	/*white-space: pre-wrap; Se adapta al tamaño del navegador y funciona como el rap*/
+	white-space: pre-line;
+	word-spacing: 5px; /*Espacios entre cada palabra*/
+	font-family: 'Indie Flower', cursive;
+	text-align: center;
 }
 h2.parrafo{
 	color:hsla( 37, 81%, 27%, 1 );
@@ -42,34 +55,46 @@ h3{
 	border: solid #eee 10px;
 	border-radius: 100%;
 }
-span h2,p{
+span h2{
 	color: hsl( 37, 81%, 27%, .8 );
 	font-size: 25px;
 }
 a[href]{
 	color: red;
+	font-size: 30px;
+	text-decoration: none;
 }
 a[href="ejemplo.com"]{
 	color: blue;
+	text-decoration: overline;
+	text-transform: capitalize;
 }
 a[class="parrafo"]{
 	color: black;
+	text-decoration: line-through;
+	text-transform: uppercase;
 }
 .parrafo{
 	background-color: #f0a730 ;
 	height: 20px;
+	text-align: right;
 }
-#colores > ul >li{
+#colores > ul {
 	background-color: rgba( 98, 208, 201 , .5);
 	color: white;
 	font-size: 2em;
 }
 #orange{
-	color:orange !important;
+	color:hsl( 29, 98%, 45% ) !important;
+	font-size: 1.3em; /*1 em son 16px*/
 }
 #green{
-	color: green;
+	color:  rgb(11,71,6);
+	font-family: 'Indie Flower', cursive;
+	font-size: 40px;
 }
 #red{
 	color: red;
+	font-family: Arial;
+	font-style: italic;
 }
