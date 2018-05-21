@@ -86,18 +86,35 @@ a[class="parrafo"]{
 .container{
 	position: relative;
 	border: 2px solid red;
-	height: 400px;
+	height: 100px;
 	/*padding: 10px 5px 10px 5px;*/
 	/*padding: 10px; Cada lado será de 10px*/
 }
 .imagen{
-	position: absolute;
+	position: relative;
 	margin: 10px;
 	/*top: 30px;
 	left: 20px; */
+	border-radius: 10px
+}
+.imagen2{
+	position: relative;
+	margin: 10px;
+	/*top: 30px;
+	left: 20px; */
+	border-radius: 10px
 }
 .titulo{
 	margin: auto;
+}
+.thumb{
+	margin: 0px;
+	border: 5px solid #ddd;
+	width: 150px;
+}
+.thumb:hover{
+	box-shadow: 0 2px 1px rgba(0,140,186,.5);
+	width: 300px;
 }
 #colores > ul {
 	background-color: rgba( 98, 208, 201 , .5);

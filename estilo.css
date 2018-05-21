@@ -1,0 +1,33 @@
+body{
+	margin: 0;
+}
+h1{
+	color: hsl( 37, 81%, 27% );  
+	text-align: center;
+	font-size: 50px;
+	font-family: 'Pacifico', cursive;
+	text-shadow: 10px 5px 5px #e59866;
+}
+.imagen{
+	border-radius: 10px
+}
+.imagen2{
+	border-radius: 10px
+}
+.titulo{
+	margin: auto;
+}
+/*.thumb{
+	margin: 0px;
+	border: 5px solid #ddd;
+	width: 150px;
+}
+.thumb:hover{
+	box-shadow: 0 2px 1px rgba(0,140,186,.5);
+	width: 300px;
+}*/
+.responsive{
+	height: auto;
+	max-width: 100%;
+
+}
