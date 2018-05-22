@@ -118,3 +118,20 @@ div.cubo:hover{
 	0%{transform: rotate(0);}
 	100%{transform: rotate(360deg);}
 }
+/*Es para que la pagina se vea bien en cualquier dispositivo*/
+@media screen and (max-width: 480px){ /*Iphone 4*/
+	body{
+		background-color: red;
+	}
+}
+@media screen and (min-width: 481px) and (max-width: 760px){
+	/*phablets celulares mas grandes pero menos que una tableta*/
+	body{
+		background-color: green;
+	}
+}
+@media screen and (min-width: 761px){
+	body{
+		background-color: gray;
+	}
+}
