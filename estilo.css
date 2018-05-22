@@ -60,6 +60,13 @@ div.polaroid{
 	box-shadow: 5px 5px 10px rgba(0,0,0,.5);
 	display: block;
 }
+div.polaroid:hover{
+	/*transform: translate(50px,50px); Se mueve en x y en y*/
+	/*transform: translateX(50px); Solo se mueve en X y puede poner en Y*/
+	/*transform: rotate(50deg); Gira en grados*/
+	/*transform: scale(2,2); Aumenta o disminuye el tamaño*/
+	transform: skew(20deg);
+}
 .texto{
 	text-align: center;
 	font-family: 'Indie Flower', cursive;
