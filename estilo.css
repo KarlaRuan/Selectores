@@ -59,13 +59,15 @@ div.polaroid{
 	margin-top: 10px;
 	box-shadow: 5px 5px 10px rgba(0,0,0,.5);
 	display: block;
+	transition: transform .5s;
+	transition-delay: .3s;
 }
 div.polaroid:hover{
 	/*transform: translate(50px,50px); Se mueve en x y en y*/
 	/*transform: translateX(50px); Solo se mueve en X y puede poner en Y*/
 	/*transform: rotate(50deg); Gira en grados*/
 	/*transform: scale(2,2); Aumenta o disminuye el tamaño*/
-	transform: skew(20deg);
+	transform: skew(20deg); /*Inclina la imagen*/
 }
 .texto{
 	text-align: center;
@@ -78,4 +80,19 @@ div.polaroid:hover{
 	left: 16px;
 	font-size: 20px;
 	color: white;
+}
+.cubo{
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	transition: width 2s, height 2s, transform 2s;
+	/*transition-timing-function: linear; Comienza y termina con la misma velocidad*/
+	/*transition-timing-function: ease; Comienza lento, despues rapido y termina lento*/
+	transition-timing-function: ease-in;/*Comienza lento y termina rapido y
+											ease-out empieza rapido y termina lento*/
+}
+div.cubo:hover{
+	width: 300px;
+	height: 300px;
+	transform: rotate(180deg);
 }
