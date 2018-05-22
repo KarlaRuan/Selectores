@@ -49,6 +49,7 @@ h1{
 	filter: sepia(3); /*El 1 es el valor original*/
 }
 div.polaroid{
+	position: relative;
 	background-color: white;
 	width: 300px;
 	/*opacity: .9; Va de 0.0 a 1.0*/
@@ -63,4 +64,11 @@ div.polaroid{
 	text-align: center;
 	font-family: 'Indie Flower', cursive;
 	font-size: 20px;
+}
+.imgText{
+	position: absolute;
+	top: 5px;
+	left: 16px;
+	font-size: 20px;
+	color: white;
 }
