@@ -32,9 +32,26 @@ h1{
 	max-width: 100%;
 
 }
+.polaroid img{
+	/*opacity: .5;*/
+	/*filter: blur(3px); Hace que se vea borroso, desenfoca*/
+	/*filter: brightness(1.5); Modifica la luz 1 es normal*/
+	/*filter: contrast(3); Modifica el contraste 1 es normal*/
+	/*filter: grayscale(1);*/
+	/*filter: hue-rotate(180deg); Se usa con grados, el max es 360
+								modifica la luz, el matiz y saturacion*/
+	/*filter: invert(.1); Invierte los colores*/
+	/*filter: saturate(5); Satura los colores*/
+	filter: sepia(.2);
+}
+.polaroid img:hover{
+	/*opacity: 1;*/
+	filter: sepia(3); /*El 1 es el valor original*/
+}
 div.polaroid{
 	background-color: white;
 	width: 300px;
+	/*opacity: .9; Va de 0.0 a 1.0*/
 	padding: 10px;
 	margin: auto;
 	margin-bottom: 20px;
