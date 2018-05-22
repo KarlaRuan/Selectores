@@ -61,14 +61,20 @@ div.polaroid{
 	display: block;
 	transition: transform .5s;
 	transition-delay: .3s;
+	animation: skew 4s infinite alternate;
+	/*animation-name: skew;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;/*reverse*/
+	/*animation-timing-function: ease;/*linear,ease */
 }
-div.polaroid:hover{
+/*div.polaroid:hover{
 	/*transform: translate(50px,50px); Se mueve en x y en y*/
 	/*transform: translateX(50px); Solo se mueve en X y puede poner en Y*/
 	/*transform: rotate(50deg); Gira en grados*/
 	/*transform: scale(2,2); Aumenta o disminuye el tamaño*/
-	transform: skew(20deg); /*Inclina la imagen*/
-}
+	/*transform: skew(20deg); Inclina la imagen
+}*/
 .texto{
 	text-align: center;
 	font-family: 'Indie Flower', cursive;
@@ -85,7 +91,7 @@ div.polaroid:hover{
 	width: 100px;
 	height: 100px;
 	background-color: red;
-	transition: width 2s, height 2s, transform 2s;
+	transition: width 2s, height 2s, transform 4s;
 	/*transition-timing-function: linear; Comienza y termina con la misma velocidad*/
 	/*transition-timing-function: ease; Comienza lento, despues rapido y termina lento*/
 	transition-timing-function: ease-in;/*Comienza lento y termina rapido y
@@ -95,4 +101,17 @@ div.cubo:hover{
 	width: 300px;
 	height: 300px;
 	transform: rotate(180deg);
+	animation-name: ejemplo;
+	animation-duration: 4s;
+	animation-delay: .2s;
+}
+@keyframes ejemplo{
+	0%{background-color: red}
+	25%{background-color: green}
+	50%{background-color: blue}
+	100%{background-color: yellow}
+}
+@keyframes skew{
+	0%{transform: skewX(-20deg);}
+	100%{transform: skewY(20deg);}
 }
