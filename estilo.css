@@ -2,12 +2,44 @@ body{
 	margin: 0;
 	background-color: #909497 ;
 }
+a:link{
+	color: yellow;
+}
+a:visited{
+	color: red;
+}
+a:active{
+	color: green;
+}
+a:hover{
+	background-color: black;
+}
 h1{
 	color: hsl( 37, 81%, 27% );  
 	text-align: center;
 	font-size: 50px;
 	font-family: 'Pacifico', cursive;
 	text-shadow: 10px 5px 5px #e59866;
+}
+/*p:nth-child(2){
+	background-color: orange;
+}
+p:nth-last-child(1){
+	background-color: gray;
+}
+p:nth-of-type(even); solo los pares o (odd) impares
+p:only-of-type
+p:empty    La unica vacía
+p:not(selector)
+p:last-child
+p:only-child
+p:root
+p:enable
+p:disable
+p:checked*/
+p:nth-of-type(2){ /*first-of-type Elige la 1era del tipo de elemento o 
+	last-of-type elige la ultima*/
+	background-color: orange;
 }
 .imagen{
 	border-radius: 10px
@@ -18,15 +50,6 @@ h1{
 .titulo{
 	margin: auto;
 }
-/*.thumb{
-	margin: 0px;
-	border: 5px solid #ddd;
-	width: 150px;
-}
-.thumb:hover{
-	box-shadow: 0 2px 1px rgba(0,140,186,.5);
-	width: 300px;
-}*/
 .responsive{
 	height: auto;
 	max-width: 100%;
@@ -123,15 +146,25 @@ div.cubo:hover{
 	body{
 		background-color: red;
 	}
+	.cubo{
+		display: none;
+	}
 }
 @media screen and (min-width: 481px) and (max-width: 760px){
 	/*phablets celulares mas grandes pero menos que una tableta*/
 	body{
 		background-color: green;
 	}
+	.imagen2{
+		display: none;
+	}
 }
 @media screen and (min-width: 761px){
 	body{
 		background-color: gray;
+	}
+	div.polaroid{
+		display: inline-block;
+		margin-left: 10%;
 	}
 }
