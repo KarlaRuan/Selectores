@@ -36,10 +36,21 @@ p:only-child
 p:root
 p:enable
 p:disable
-p:checked*/
+p:checked
 p:nth-of-type(2){ /*first-of-type Elige la 1era del tipo de elemento o 
-	last-of-type elige la ultima*/
+	last-of-type elige la ultima
 	background-color: orange;
+}*/
+/*Pseudo elemento
+.parrafo::first-line
+.parrafo::first-letter
+.parrafo::before     o after
+*/
+.parrafo::selection{
+	/*content: url("imagen4.jpg");*/
+	color: yellow;
+	background-color: red;
+	/*font-size: 3em;*/
 }
 .imagen{
 	border-radius: 10px
